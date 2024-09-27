@@ -1,0 +1,636 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Geologica:wght@200;300&family=Raleway:wght@200&display=swap');
+
+.font{
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Geologica', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif ;
+
+
+}
+
+.nav-desktop{
+    padding: 15px 40px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color:  #1b1821;;
+
+}
+
+.nav-desktop .navigation{
+    display: flex;
+    gap: 3rem;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-desktop ul .menu:hover{
+    border-bottom: 2px solid #F1E2AD;
+}
+
+.nav-desktop ul li a{
+    text-decoration: none;  
+    color: white;
+
+}
+
+.nav-desktop ul li::marker{
+    display: none;
+}
+
+
+.nav-desktop ul .product-nav {
+    position: relative;
+}
+
+
+.nav-desktop ul .product-nav .dropdown {
+    background: #1b1821;
+    min-width: 10rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    left: -30%;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    list-style: none;
+}
+
+
+.nav-desktop ul .product-nav .dropdown li {
+  margin: 0;
+}
+
+.nav-desktop ul .product-nav .dropdown li a {
+  color: white;
+}
+
+.nav-desktop ul .product-nav .dropdown li a:hover {
+  color: #F1E2AD;
+}
+
+ul .product-nav:hover > .dropdown,
+ul .product-nav .dropdown:hover {
+visibility: visible;
+opacity: 1;
+display: flex;
+}
+
+/* .dropdown {
+  display: none;
+} */
+
+html{
+  scroll-behavior: smooth;
+}
+
+.nav ul li a{
+  color: black;
+  font-size: 15px;
+
+}
+
+.nav ul .product-nav {
+  position: relative;
+}
+
+.home {
+  background-color: #f0f1e7;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.background img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.home .after{
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  text-decoration: none;
+}
+
+.home .after a{
+    text-decoration: none;
+    background-color: black;
+    color: #e4e5d7;
+    padding: 10px 30px ;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home .after a:hover{
+  background-color: #78715f;
+}
+
+.products{
+ 
+  text-align: center;
+  margin: 40px 0;
+}
+
+.products h2{
+  font-family:  'Cormorant Garamond', serif;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+
+.products .container-products {
+  display: flex;
+  margin: 20px 100px;
+  gap: 5%;
+}
+
+.products .container-products .card-product {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products .container-products .card-product .product-img {
+  height: 200px;
+  width: 90%;
+}
+
+.products .container-products .card-product a {
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+    font-family:  'Cormorant Garamond', serif;
+    font-size: 25px;
+}
+
+.products .container-products .card-product a:hover {
+  color: #78715f;
+}
+
+.products .container-products .card-product .product-img img {
+  width: 100%;
+}
+
+
+
+.aboutUs img{
+  width: 100%;
+}
+
+.aboutUs .img-after h2{
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  color: #e4e5d7;
+  font-size: 50px;
+}
+
+.aboutUs p{
+  padding-top: 30px ;
+  padding-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.location{
+  background-color: #f0f1e7;
+}
+
+.location h2{
+  font-family:'Cormorant Garamond', serif ;
+ text-align: center;
+ font-size: 40px;
+ padding-top: 20px;
+ margin-bottom: 20px;
+
+}
+
+.location p{
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+
+}
+
+.location .loc-img{
+  justify-content: center;
+  margin-left: 150px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.location .loc-img img{
+
+  height: 300px;
+  width: 80vh;
+}
+
+.location .loc-city{
+  display: flex;
+}
+
+.loc-city p{
+  text-align: center;
+  justify-content: center;
+  gap: 7rem;
+  padding-left: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.location .loc{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  
+}
+
+.contactUs{
+  background-color: #f0f1e7;
+  text-align: center;
+  padding: 20px 20px;
+  padding-bottom: 50px;
+}
+
+.contactUs h2{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+}
+
+.contactUs h3{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.container-form {
+  justify-content: center;
+  display: flex;
+  gap:5%
+
+}
+
+.form-wrapper{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.container-form .form-wrapper .form-box{
+  width: 300px;
+  height: 25px;
+	background: white;
+  padding: 15px;
+  margin: 5px;
+}
+
+.form-select {
+    padding: 16px 20px;
+    border: none;
+    color: black;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 25px;
+    border: solid black 2px;
+  
+}
+
+.form h4{
+  color: red;
+}
+
+textarea {
+  width: 50%;
+  height: 150px;
+  margin-top: 10px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: white;
+  font-size:16px;
+  resize: none;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #e2d3a8;
+  color: #78715f;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #F1E2AD;
+}
+
+.product-view{
+  background-color: #f0f1e7;
+  display: flex;
+  padding: 75px;
+}
+
+.product-view .img-view img{
+  justify-content: left;
+  height: 350px;
+  width: 350px;
+}
+
+.product-view .product-page .button{
+  display: flex;
+  gap: 5rem;
+  padding: 20px;
+}
+
+.product-page h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.product-page h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+}
+
+.product-view .product-page .button h3{
+  border: black 3px solid;
+  font-size: 25px;
+  color: black;
+}
+
+.product-view .product-page .button a{
+  border: black 3px solid;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+
+.product-view .product-page .product-desc{
+ display: flex;
+gap: 5rem;
+}
+
+.desc .judul{
+  font-weight: bold;
+}
+
+.quality .quality-img{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.quality-img img{
+  width: 60vh;
+}
+
+.quality .quality-text {
+  display: flex;
+  margin:  40px;
+  gap: 5rem;
+  row-gap: 10rem;
+  padding: 15px 30px 30px 20px;
+}
+
+.quality-text h2{
+  font-family:  'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 30px;
+}
+
+.sell{
+  width: 95%;
+  height: 50%;
+  padding: 50px;
+  justify-content: center;
+  margin: auto;
+  border: solid 5px #e2d3a8;
+  background-color: #e2d3a8;
+}
+
+.sell h2{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 50px;
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sell .sell-step{
+  display: flex;
+  gap: 5rem;
+}
+
+
+.sell .sell-step .step-step .p-step{
+  font-family: 'Cormorant Garamond', serif ;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.step-step h3{
+  text-align: justify;
+  font-size: 20px;
+  font: weight 150px;
+  margin-bottom: 5px;
+}
+
+.brands h3{
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  font-family:'Raleway', sans-serif ;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.brands-logo{
+  display: flex;
+
+}
+
+.brands-logo img{
+  margin: auto;
+  justify-content: center;
+  width: 30vh;
+}
+
+.footer-bawah{
+  background-color: #000034;
+  color: antiquewhite;
+  width: 100%;
+  display: flex;
+  padding: 50px 0px 60px 50px;
+	
+  gap: 20rem;
+}
+
+.footer-bawah ul{
+  list-style: none;
+}
+
+.footer-bawah .footer-left ul li a{
+  text-decoration: none;
+  color: white;
+}
+.footer-left{
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-bawah .footer-mid a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+.all-product{
+  background-color: #e4e5d7;
+}
+
+.all-product h1{
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.product-4{
+  text-align: center;
+  padding: 40px 0;
+}
+
+.product-4 h3{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.product-4 a{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.product-4 .container-products{
+  display: flex;
+  margin: 10px 90px;
+  gap: 2%;
+}
+
+.product-4 .container-products .card-product{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.all-product .product-4 .container-products .card-product .product-img img{
+  height: 200px;
+  width: 200px;
+}
+
+.product-4 .container-products .card-product a, h3{
+  text-decoration: none;
+  color: black;
+  padding-top: 9px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.product-2{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.product-2 h3{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.product-2 a{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.product-2 .product-brand{
+  display: flex;
+  margin-bottom: 20px;
+  gap: 15rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.product-2 .product-box{
+  display: flex;
+  flex-direction: row;
+}
+.product-2 .container-products{
+  display: flex;
+  margin:10px 90px;
+  gap: 5%;
+  
+}
+
+
+
+.product-2 .container-products .card-product{
+  width: 40%;  
+  align-items: center;
+}
+
+.all-product .product-2 .container-products .card-product img{
+  height: 200px;
+  width: 200px;
+}
+
+.product-2 .container-products .card-product a, h3{
+  text-decoration: none;
+  color: black;
+  padding-top: 9px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contactUs{
+  padding-top: 40px;
+}
+
+.contactUs h3{
+  font-size: 30px;
+}
